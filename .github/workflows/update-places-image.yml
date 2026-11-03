@@ -1,0 +1,12 @@
+name: Mise à jour des places disponibles
+
+on:
+  repository_dispatch:
+    types: [update-places-image]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirmer le déclenchement
+        run: echo "Déclenchement reçu de Power Automate"
